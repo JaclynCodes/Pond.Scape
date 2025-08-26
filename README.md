@@ -252,7 +252,7 @@ sudo mv terraformer-${PROVIDER}-darwin-amd64 /usr/local/bin/terraformer
 
 Prerequisites: Go 1.24.0 or later
 
-1.  Run `git clone <terraformer repo> && cd terraformer/`
+1.  Run `git clone https://github.com/GoogleCloudPlatform/terraformer && cd terraformer/`
 2.  Run `go mod download`
 3.  Run `go build -v` for all providers OR build with one provider
 `go run build/main.go {google,aws,azure,kubernetes,etc}`
