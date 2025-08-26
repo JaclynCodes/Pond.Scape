@@ -1,6 +1,7 @@
 module github.com/GoogleCloudPlatform/terraformer
 
 go 1.24.0
+
 require (
 	cloud.google.com/go v0.116.0 // indirect
 	cloud.google.com/go/logging v1.12.0
