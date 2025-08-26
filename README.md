@@ -249,6 +249,9 @@ sudo mv terraformer-${PROVIDER}-darwin-amd64 /usr/local/bin/terraformer
 3. Add the exe file path to path variable
 
 **From source**
+
+Prerequisites: Go 1.24.0 or later
+
 1.  Run `git clone <terraformer repo> && cd terraformer/`
 2.  Run `go mod download`
 3.  Run `go build -v` for all providers OR build with one provider
@@ -391,6 +394,37 @@ Terraforming lacks full coverage for resources - as an example you can see that 
 
 * terraforming - https://github.com/dtan4/terraforming/blob/master/lib/terraforming/template/tf/s3.erb
 * official S3 support - https://www.terraform.io/docs/providers/aws/r/s3_bucket
+
+## Troubleshooting
+
+### Common Issues
+
+**Permission Errors**
+- Ensure your cloud provider credentials have read access to all resources you're trying to import
+- For AWS: Check that your IAM user/role has the necessary policies
+- For GCP: Verify your service account has appropriate roles
+- For Azure: Confirm your service principal has reader access
+
+**Provider Plugin Issues**
+- Run `terraform init` in your working directory to download required provider plugins
+- Ensure your Terraform provider versions match the requirements listed in the Installation section
+- If using custom provider versions, verify compatibility with Terraformer
+
+**Large Resource Sets**
+- Use filters to limit the scope of imports: `--filter=resource_type=specific_id`
+- Consider importing resources by region or resource group to avoid timeouts
+- For very large environments, import resources incrementally
+
+**Generated File Issues**
+- Check that you have write permissions in the output directory
+- Ensure sufficient disk space for generated files
+- Review generated files for any syntax errors before running `terraform plan`
+
+### Getting Help
+
+- Check the [Issues](https://github.com/GoogleCloudPlatform/terraformer/issues) page for similar problems
+- Review provider-specific documentation in the `/docs` folder
+- Ensure you're using the latest version of Terraformer
 
 ## Stargazers over time
 
