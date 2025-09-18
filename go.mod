@@ -441,7 +441,7 @@ require (
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/cdn v1.0.392
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/cfs v1.0.392
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/clb v1.0.392
-	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.694
+	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.1.0
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/cvm v1.0.392
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/dnspod v1.0.392
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/es v1.0.392
@@ -450,7 +450,7 @@ require (
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/pts v1.0.694
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/redis v1.0.392
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/scf v1.0.392
-	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/ses v1.0.392
+	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/ses v1.1.0
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/ssl v1.0.392
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/tat v1.0.392
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/tcaplusdb v1.0.392
