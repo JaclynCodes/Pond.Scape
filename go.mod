@@ -311,7 +311,7 @@ require (
 	github.com/spf13/afero v1.10.0 // indirect
 	github.com/stretchr/testify v1.10.0 // indirect
 	github.com/tomnomnom/linkheader v0.0.0-20180905144013-02ca5825eb80 // indirect
-	github.com/ulikunitz/xz v0.5.10 // indirect
+	github.com/ulikunitz/xz v0.5.14 // indirect
 	github.com/vmihailenco/msgpack/v4 v4.3.12 // indirect
 	github.com/vmihailenco/tagparser v0.1.2 // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
